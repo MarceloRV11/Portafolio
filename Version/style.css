@@ -1,0 +1,142 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.Fondo{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.saludo {
+  position: absolute; 
+  top: 6cm;
+  left: 1cm;
+  z-index: 2;
+}
+
+.saludo h1 {
+  position:absolute;
+  font-size: 5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.saludo h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px wheat;
+}
+
+.saludo h1:nth-child(2) {
+  color:#7FA3BB;
+  animation: animate 4s ease-in-out infinite;
+  }
+
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }  
+}
+
+.saludo p {
+  position: absolute;
+  color:#8FDCC2;
+  font-family: 'Poppins', sans-serif;
+  top: 5%;
+}
+
+.saludo p3{
+  position: absolute;
+  color:whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  top: 32%;
+}
+
+.saludo img{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  left: 25cm;
+}
+
+h3 {
+  z-index: 3;
+  display: inline-block;
+}
+
+.presentacion {
+  min-height: 100vh;
+  margin-top: 0cm;
+}
+
+.menu-container {
+  font-family: 'Poppins', sans-serif;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  top: 3%; 
+  left: 35%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  margin-left: 0.5rem;
+}
+
+.main-menu li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 50px;
+}
+
+
+section.section {
+  height: 70vh;
+  background-color:#345454;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  display: block;
+  text-align: center;
+  position: relative;;
+}
+
+section.section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+.nada{
+  display:block;
+  position: absolute;
+left: 4cm;
+}
+
+.nada img{
+  width: 20%;
+  height: 20%;
+  margin-right: 4cm;
+  border-radius: 10%;
+}
